@@ -135,19 +135,19 @@ void MonsterNextStep(int *PlayersX, int *PlayersY, int num_players, int *Monster
 
         if (best_next_step.x == monster.x - 1 && best_next_step.y == monster.y)
         {
-            MonsterNext[i] = 0; // Up
+            MonsterNext[i] = 2; // Up
         }
         else if (best_next_step.x == monster.x + 1 && best_next_step.y == monster.y)
         {
-            MonsterNext[i] = 1; // Down
+            MonsterNext[i] = 3; // Down
         }
         else if (best_next_step.x == monster.x && best_next_step.y == monster.y - 1)
         {
-            MonsterNext[i] = 2; // Left
+            MonsterNext[i] = 1; // Left
         }
         else if (best_next_step.x == monster.x && best_next_step.y == monster.y + 1)
         {
-            MonsterNext[i] = 3; // Right
+            MonsterNext[i] = 0; // Right
         }
         else
         {
